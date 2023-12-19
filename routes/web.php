@@ -47,7 +47,7 @@ Route::middleware('guest')->group(function () {
     Route::get('/login', [RegisterController::class, 'login'])->name('login');
     Route::post('/login/authenticate', [RegisterController::class, 'loginAuthenticate'])->name('login.authenticate');
     Route::get('/cutti', [QualificationController::class, 'cutti'])->name('cutti');
-    Route::get('/homee', function () {
+    Route::get('/home', function () {
         return view('ihya.index');
     })->name('homee');
 });

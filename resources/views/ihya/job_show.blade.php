@@ -1,10 +1,10 @@
 @extends('ihya.app')
 @section('content')
-    <div class="flex flex-col items-start px-20 mt-20 w-full max-md:px-5 max-md:mt-10 pt-20">
+    <div class="flex flex-col items-start px-20 mt-20 w-full max-md:px-5 max-md:mt-10 pt-20 fade-in ">
         <!-- Top Section -->
         <div class="flex gap-5 max-md:flex-col max-w-full">
             <!-- Left Section -->
-            <div class="flex flex-col w-2/3 max-md:w-full">
+            <div class="flex flex-col w-2/3 max-md:w-full ">
                 <div class="pr-10 pl-2 w-full max-md:pr-0">
                     <!-- Header -->
                     <div class="flex gap-5 items-center justify-between flex-wrap">

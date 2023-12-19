@@ -24,7 +24,8 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class JobExamResource extends Resource
 {
     protected static ?string $model = JobExam::class;
-
+    protected static ?string $modelLabel = "Jobs & Exams";
+    protected static ?int $navigationSort = 4;
 
     protected static ?string $navigationIcon = 'heroicon-o-briefcase';
 

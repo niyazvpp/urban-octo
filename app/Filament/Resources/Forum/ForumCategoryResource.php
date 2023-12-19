@@ -16,9 +16,9 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class ForumCategoryResource extends Resource
 {
     protected static ?string $model = ForumCategory::class;
-
+    protected static ?int $navigationSort = 6;
     protected static ?string $navigationIcon = 'heroicon-o-squares-2x2';
-
+    protected static ?string $navigationGroup = 'Forum';
     public static function form(Form $form): Form
     {
         return $form

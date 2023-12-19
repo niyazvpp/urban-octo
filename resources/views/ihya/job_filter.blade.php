@@ -1,6 +1,6 @@
 @extends('ihya.app')
 @section('content')
-    <main class="flex z-10 flex-col px-20 md:px-[2%] py-8 -mt-10 w-full bg-orange-50 max-md:px-5 max-md:max-w-full">
+    <main class="flex  z-10 flex-col px-20 md:px-[2%] py-8 -mt-10 w-full bg-orange-50 max-md:px-5 max-md:max-w-full">
         <div class="w-full max-md:max-w-full">
             <div class="  md:w-full flex gap-5 max-md:flex-col">
                 <aside class=" flex flex-col w-3/12 max-md:ml-0 max-md:w-full" role="complementary" aria-label="Job Filters">
@@ -8,7 +8,7 @@
                         <div
                             class="flex flex-col items-start px-8 lg:px-4 pt-7 pb-16 w-full bg-white rounded-3xl shadow-2xl max-md:px-5">
                             <div
-                                class="flex gap-5 justify-between self-stretch w-full text-center whitespace-nowrap items-center">
+                                class="flex gap-5 justify-between self-stretch w-full text-center whitespace-nowrap items-center fade-in">
                                 <div class="flex gap-2 text-xl font-semibold leading-10 text-orange-400">
                                     <img loading="lazy"
                                         src="https://cdn.builder.io/api/v1/image/assets/TEMP/5a6baa4d9a4c95ac730a77ce06721b5b13229ad8c1899d90e3db3531562dcaf1?placeholderIfAbsent=true&apiKey=e00d3c793b254127971e1d09475396f0"
@@ -23,7 +23,7 @@
                             </div>
                             <!-- #region qualified or not-->
 
-                            <fieldset class="w-full flex flex-col items-center my-2 ">
+                            <fieldset class="w-full flex flex-col items-center my-2  fade-in">
                                 <legend
                                     class="mt-3.5 text-base font-semibold leading-10 md:leading-tight md:mb-2 md:pt-3  text-black">
                                     Qualification Status</legend>
@@ -55,7 +55,7 @@
 
 
                             <!-- #region type state or central-->
-                            <fieldset class="w-full flex flex-col items-center my-2">
+                            <fieldset class="w-full flex flex-col items-center my-2  fade-in">
                                 <legend
                                     class="mt-3.5 text-base font-semibold leading-10 md:leading-tight md:mb-2 md:pt-3  text-black">
                                     Level</legend>
@@ -84,7 +84,7 @@
                                         </label>
                                     </div>
                             </fieldset>
-                            <fieldset class="w-full flex flex-col items-center my-2">
+                            <fieldset class="w-full flex flex-col items-center my-2  fade-in">
                                 <legend
                                     class="mt-3.5 text-base font-semibold leading-10 md:leading-tight md:mb-2 md:pt-3  text-black">
                                     Type</legend>
@@ -117,7 +117,7 @@
                             <!-- #endregion  type state or central -->
 
                             <!-- #region Vancancy-->
-                            <fieldset class="w-full flex flex-col items-center my-2">
+                            <fieldset class="w-full flex flex-col items-center my-2 fade-in">
                                 <legend
                                     class="mt-3.5 text-base font-semibold leading-10 md:leading-tight md:mb-2 md:pt-3 center text-black">
                                     Vacancy</legend>
@@ -148,7 +148,7 @@
 
                             <!-- #endregion  Vancancy -->
 
-                            <div class="mb-6 mt-8">
+                            <div class="mb-6 mt-8 fade-in">
                                 <h3 class="text-lg font-semibold text-black mb-4">Interested Areas</h3>
 
                                 <ul>
@@ -190,7 +190,8 @@
                     </div>
                 </aside>
 
-                <main class="flex flex-col ml-0 w-9/12 max-md:ml-0 max-md:w-full md:grow md:w-full " role="main">
+                <main class="flex flex-col ml-0 w-9/12 max-md:ml-0 max-md:w-full md:grow md:w-full fade-in"
+                    role="main">
                     <div class="flex flex-col w-full max-md:mt-8 max-md:max-w-full">
                         <div class="flex flex-col w-full max-md:max-w-full">
                             <p class="self-start text-base leading-10  mr-4  text-black max-md:max-w-full">

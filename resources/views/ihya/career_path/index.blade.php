@@ -441,7 +441,7 @@
         <div class="flex flex-col items-start px-8 md:px-16 pt-6 pb-12 w-full max-md:px-5">
             <div class="w-full max-w-[1145px] mx-auto px-4 md:px-6">
                 <!-- Main Flex Container -->
-                <div class="flex gap-5 lg:gap-10 flex-col md:flex-row items-center">
+                <div class="fade-in flex gap-5 lg:gap-10 flex-col md:flex-row items-center">
                     <!-- Left Column - Image -->
                     <div class="flex w-full md:w-[45%]">
                         <img style="height: 438px;" loading="lazy" src="{{ asset('assets/src/career path.svg') }}"
@@ -471,11 +471,11 @@
         </div>
     </section>
 
-    <div class="flex overflow-hidden flex-col bg-white">
+    <div class="fade-in  flex overflow-hidden flex-col bg-white">
 
 
         <section id="career-section" aria-labelledby="skill-section-title"
-            class="flex justify-center items-center mt-20 w-full pb-20">
+            class=" flex justify-center items-center mt-20 w-full pb-20">
             <form id="questionnaire"
                 class="container mx-auto flex flex-col items-center pt-16 pb-12 px-5 md:px-10 lg:px-20 w-full max-w-4xl rounded-3xl shadow-lg"
                 style="background-color: #FFFAD7;">
@@ -569,7 +569,7 @@
                 const responseValue = responses[q.id] || null;
 
                 fieldset.innerHTML = `
-                <legend class="text-lg md:text-xl font-semibold leading-none text-black mb-4">
+                <legend class="fade-in text-lg md:text-xl font-semibold leading-none text-black mb-4">
                     Q.${startIndex + index + 1}/${questions.length}
                 </legend>
                 <p class="text-lg md:text-lg leading-relaxed text-black mb-6">${q.question}</p>
@@ -577,11 +577,11 @@
                     ${q.options
                         .map(
                             (option, optIndex) => `
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <div class="flex items-center">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <input id="radio-${q.id}-${optIndex}" type="radio" name="radio-group-${q.id}" value="${option}" class=" text-[#D39C32] border border-[#D39C32] focus:ring-[#D39C32]" style="width: 18px; height: 18px;" ${responseValue === option ? "checked" : ""} />
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <label for="radio-${q.id}-${optIndex}" class="ml-2 text-base text-black">${option}</label>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        `
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <div class="flex items-center">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <input id="radio-${q.id}-${optIndex}" type="radio" name="radio-group-${q.id}" value="${option}" class=" text-[#D39C32] border border-[#D39C32] focus:ring-[#D39C32]" style="width: 18px; height: 18px;" ${responseValue === option ? "checked" : ""} />
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <label for="radio-${q.id}-${optIndex}" class="ml-2 text-base text-black">${option}</label>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                `
                         )
                         .join("")}
                 </div>
@@ -666,7 +666,7 @@
                     let total = "";
                     careerSuggestions.forEach((career) => {
                         let element = `<article
-                    class="flex flex-wrap gap-5 justify-between items-start px-5 md:px-16 py-8 md:py-12 mt-6 md:mt-12 w-full rounded-3xl shadow-lg bg-[#D39C32] bg-opacity-50">
+                    class="fade-in flex flex-wrap gap-5 justify-between items-start px-5 md:px-16 py-8 md:py-12 mt-6 md:mt-12 w-full rounded-3xl shadow-lg bg-[#D39C32] bg-opacity-50">
                     <div class="flex flex-col text-sm md:text-base leading-6 text-black">
                         <h2 class="self-start text-xl md:text-3xl font-semibold leading-none">
                             ${career.career}
