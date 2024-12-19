@@ -29,7 +29,7 @@ class ChartsOverview extends ChartWidget
         return [
             'datasets' => [
                 [
-                    'label' => 'Users',
+                    'label' => 'User Registrations (last month)',
                     'data' => $data->map(fn(TrendValue $value) => $value->aggregate),
                 ],
 

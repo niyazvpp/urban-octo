@@ -121,6 +121,15 @@
                             class=" block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#d39c32] md:p-0 border-sm:border-b-2 border-gray-200 text-lg {{ Route::currentRouteName() == 'career' ? 'text-[#d36c32] font-semibold' : '' }}">Set
                             career</a>
                     </li>
+                    <form id="mob-logout" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+
+                    <li class="block md:hidden">
+                        <a href="#" onclick="document.getElementById('mob-logout').submit();"
+                            class=" py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#d39c32] md:p-0 border-sm:border-b-2 border-gray-200 text-lg">
+                            Logout</a>
+                    </li>
                 </ul>
             </div>
         </div>

@@ -92,7 +92,7 @@
                     <div class="mt-12 flex flex-col text-center md:w-full">
                         <a href="{{ route('register.index') }}">
                             <button
-                                class="bg-gold-bg-dark md:text-2xl text-lg rounded-full py-1 border-gold border-solid border-2 md:px-18 px-6 my-4">Proceed
+                                class="bg-gold-bg-dark hover:bg-[#eedbb7] md:text-2xl text-lg rounded-full py-1 border-gold border-solid border-2 md:px-18 px-6 my-4">Proceed
                                 to Join</button>
                         </a>
                         <p class="text-nowrap text-sm mt-2">Already have an account? <a href="{{ route('register.index') }}"
@@ -266,29 +266,38 @@
                 </h1>
             </div>
             <div class="flex flex-wrap place-content-center md:gap-2  md:pl-16 h-full ">
-                <button
-                    class="bg-[#F2E4CA] rounded-full border-2 border-solid border-[#D39C32] md:px-8 px-6 py-1 md:text-lg text-xs font-medium font-Calibri text-nowrap mx-1 md:my-0 my-1">
-                    Engineering</button>
-                <button
-                    class="bg-[#F2E4CA] rounded-full border-2 border-solid border-[#D39C32] md:px-8 px-6 py-1 md:text-lg text-xs font-medium font-Calibri text-nowrap mx-1 md:my-0 my-1">Medical</button>
-                <button
-                    class="bg-[#F2E4CA] rounded-full border-2 border-solid border-[#D39C32] md:px-8 px-6 py-1 md:text-lg text-xs font-medium font-Calibri text-nowrap mx-1 md:my-0 my-1">Any
-                    degree</button>
-                <button
-                    class="bg-[#F2E4CA] rounded-full border-2 border-solid border-[#D39C32] md:px-8 px-6 py-1 md:text-lg text-xs font-medium font-Calibri text-nowrap mx-1 md:my-0 my-1">Pharmacy</button>
-                <button
-                    class="bg-[#F2E4CA] rounded-full border-2 border-solid border-[#D39C32] md:px-8 px-6 py-1 md:text-lg text-xs font-medium font-Calibri text-nowrap mx-1 md:my-0 my-1">Agriculture</button><br
-                    class="md:block hidden">
-                <button
-                    class="bg-[#F2E4CA] rounded-full border-2 border-solid border-[#D39C32] md:px-8 px-6 py-1 md:text-lg text-xs font-medium font-Calibri text-nowrap mx-1 md:my-0 my-1">Architecture</button>
-                <button
-                    class="bg-[#F2E4CA] rounded-full border-2 border-solid border-[#D39C32] md:px-8 px-6 py-1 md:text-lg text-xs font-medium font-Calibri text-nowrap mx-1 md:my-0 my-1">Hotel
-                    Management</button>
-                <button
-                    class="bg-[#F2E4CA] rounded-full border-2 border-solid border-[#D39C32] md:px-5 px-6 py-1 md:text-lg text-xs font-medium font-Calibri text-nowrap mx-1 md:my-0 my-1">Sports
-                    quota</button>
-                <button
-                    class="bg-[#F2E4CA] rounded-full border-2 border-solid border-[#D39C32] md:px-5 px-6 py-1 md:text-lg text-xs font-medium font-Calibri text-nowrap mx-1 md:my-0 my-1">Teaching</button>
+                <a href="{{ route('register.index') }}">
+                    <button
+                        class="bg-[#F2E4CA] hover:bg-[#eedbb7] rounded-full border-2 border-solid border-[#D39C32] md:px-8 px-6 py-1 md:text-lg text-xs font-medium font-Calibri text-nowrap mx-1 md:my-0 my-1"></a>
+                Engineering</button>
+                <a href="{{ route('register.index') }}">
+                    <button
+                        class="bg-[#F2E4CA] hover:bg-[#eedbb7] rounded-full border-2 border-solid border-[#D39C32] md:px-8 px-6 py-1 md:text-lg text-xs font-medium font-Calibri text-nowrap mx-1 md:my-0 my-1">Medical</button></a>
+                <a href="{{ route('register.index') }}">
+                    <button
+                        class="bg-[#F2E4CA]  hover:bg-[#eedbb7] rounded-full border-2 border-solid border-[#D39C32] md:px-8 px-6 py-1 md:text-lg text-xs font-medium font-Calibri text-nowrap mx-1 md:my-0 my-1">Any
+                        degree</button></a>
+                <a href="{{ route('register.index') }}">
+                    <button
+                        class="bg-[#F2E4CA]  hover:bg-[#eedbb7] rounded-full border-2 border-solid border-[#D39C32] md:px-8 px-6 py-1 md:text-lg text-xs font-medium font-Calibri text-nowrap mx-1 md:my-0 my-1">Pharmacy</button></a>
+                <a href="{{ route('register.index') }}">
+                    <button
+                        class="bg-[#F2E4CA] hover:bg-[#eedbb7]  rounded-full border-2 border-solid border-[#D39C32] md:px-8 px-6 py-1 md:text-lg text-xs font-medium font-Calibri text-nowrap mx-1 md:my-0 my-1">Agriculture</button>
+                    <br> </a class="md:block hidden">
+                <a href="{{ route('register.index') }}">
+                    <button
+                        class="bg-[#F2E4CA] hover:bg-[#eedbb7]  rounded-full border-2 border-solid border-[#D39C32] md:px-8 px-6 py-1 md:text-lg text-xs font-medium font-Calibri text-nowrap mx-1 md:my-0 my-1">Architecture</button></a>
+                <a href="{{ route('register.index') }}">
+                    <button
+                        class="bg-[#F2E4CA]  hover:bg-[#eedbb7] rounded-full border-2 border-solid border-[#D39C32] md:px-8 px-6 py-1 md:text-lg text-xs font-medium font-Calibri text-nowrap mx-1 md:my-0 my-1">Hotel
+                        Management</button></a>
+                <a href="{{ route('register.index') }}">
+                    <button
+                        class="bg-[#F2E4CA] hover:bg-[#eedbb7]  rounded-full border-2 border-solid border-[#D39C32] md:px-5 px-6 py-1 md:text-lg text-xs font-medium font-Calibri text-nowrap mx-1 md:my-0 my-1">Sports
+                        quota</button></a>
+                <a href="{{ route('register.index') }}">
+                    <button
+                        class="bg-[#F2E4CA] hover:bg-[#eedbb7]  rounded-full border-2 border-solid border-[#D39C32] md:px-5 px-6 py-1 md:text-lg text-xs font-medium font-Calibri text-nowrap mx-1 md:my-0 my-1">Teaching</button></a>
             </div>
         </div>
     </section>

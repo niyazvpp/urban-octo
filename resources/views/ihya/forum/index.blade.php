@@ -11,7 +11,7 @@
         100% 94.09%,
         0% 100%
     );">
-                <div class="flex flex-col-reverse md:flex-row ">
+                <div class="flex flex-col-reverse md:flex-row fade-in">
                     <div class="flex  ">
                         <img loading="lazy"
                             src="https://cdn.builder.io/api/v1/image/assets/TEMP/1b01df948736859606b9cb333801c9fb445727bd0ae07c33dc1913610e2e3fe0?placeholderIfAbsent=true&apiKey=e00d3c793b254127971e1d09475396f0"
@@ -40,7 +40,7 @@
                             <div class="flex flex-col w-full place-content-center items-center">
 
                                 <form id="form1" enctype="multipart/form-data"
-                                    class=" flex flex-col py-3 mt-9 w-full bg-white rounded-3xl shadow-lg max-md:max-w-full"
+                                    class="fade-in flex flex-col py-3 mt-9 w-full bg-white rounded-3xl shadow-lg max-md:max-w-full"
                                     role="form" aria-label="Create post form">
                                     <div class="flex flex-col px-2.5 w-full max-md:max-w-full">
                                         <!--  -->
@@ -78,7 +78,7 @@
                                     </div>
                                 </form>
 
-                                <div class="flex flex-wrap gap-2 items-start mt-28 ml-6 text-xl font-medium text-center text-black max-md:mt-10 max-md:max-w-full"
+                                <div class=" fade-in flex flex-wrap gap-2 items-start mt-28 ml-6 text-xl font-medium text-center text-black max-md:mt-10 max-md:max-w-full"
                                     role="navigation" aria-label="Category filters">
                                     <div class="flex flex-wrap gap-2 items-center">
                                         <button
@@ -99,7 +99,7 @@
 
                                 @foreach ($posts as $post)
                                     <article
-                                        class="flex flex-col items-start py-5 pr-16 pl-4 mt-20 w-full bg-white rounded-3xl shadow-lg max-md:pr-5 max-md:mt-10 max-md:max-w-full">
+                                        class="fade-in flex flex-col items-start py-5 pr-16 pl-4 mt-20 w-full bg-white rounded-3xl shadow-lg max-md:pr-5 max-md:mt-10 max-md:max-w-full">
                                         <header class="flex gap-5 w-full">
                                             <div
                                                 class=" w-full flex gap-1.5 place-content-around text-xl font-medium leading-snug text-black">
@@ -224,7 +224,7 @@
 
                         <div
                             class="flex flex-col ml-5 w-full max-md:ml-0 max-md:w-fullflex gap-5 flex-col-reverse md:w-[30%]">
-                            <div class="flex flex-col mt-4 w-full text-xl font-medium text-black max-md:mt-10">
+                            <div class=" flex flex-col mt-4 w-full text-xl font-medium text-black max-md:mt-10">
                                 <div class="flex place-content-center">
                                     <h2 class=" text-2xl font-semibold text-center leading-snug">About <span
                                             class="font-semibold text-orange-400">Ihya</span> Community</h2>

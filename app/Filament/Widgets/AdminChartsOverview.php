@@ -29,7 +29,7 @@ class AdminChartsOverview extends ChartWidget
             return [
                 'datasets' => [
                     [
-                        'label' => 'Mahalls',
+                        'label' => 'Mahall Registrations (last month)',
                         'data' => $mahalls->map(fn(TrendValue $value) => $value->aggregate),
                     ],
                 ],

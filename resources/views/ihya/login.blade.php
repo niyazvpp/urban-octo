@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ asset('assets/src/favicon.ico') }}" type="image/x-icon">
+
     @vite('resources/css/app.css')
     <title>Login | Ihya</title>
+
 </head>
 
 <body>
-    <div class="flex place-content-center">
+    <div class="flex place-content-center fade-in">
         <div id="toast-danger"
             class="hidden flex absolute items-center w-full max-w-xs p-4 mb-4 text-gray-500 bg-white rounded-lg shadow dark:text-gray-400 dark:bg-gray-800"
             role="alert">
@@ -38,7 +41,7 @@
 
 
     <section>
-        <div class="flex relative place-content-center flex-col items-center mt-8 mb-6">
+        <div class="flex relative place-content-center flex-col items-center mt-8 mb-6 fade-in">
             <img class="mr-[55%] hidden md:block" src="{{ asset('assets/src/IHYA logo png 1.png') }}" alt="IHYA Logo">
 
             <h1 class="md:text-3xl text-2xl my-2 font-semibold text-center md:mb-5 mb-2">Login
@@ -99,6 +102,8 @@
                 }
             });
         })
+
+
     });
 </script>
 

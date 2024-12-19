@@ -8,9 +8,29 @@
     <link rel="stylesheet" href="{{ asset('assets/css/first.css') }}">
     @vite('resources/css/app.css')
     <title>Ihya</title>
+
+
+    <style>
+        /* Smooth Scrolling Effect */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Fade-in Animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 
-<body class="bg-[url('{{ asset('assets/src/lines.svg') }}')]">
+<body class="bg-[url('{{ asset('assets/src/lines.svg') }}')]  fade-in">
 
 
     <section class=" flex flex-col place-content-around items-center bg-no-repeat">
@@ -46,5 +66,25 @@
 
 
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // IntersectionObserver Setup
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("fade-in-visible");
+                    }
+                });
+            }, {
+                threshold: 0.2
+            } // Trigger when 20% of the element is visible
+        );
+
+        // Add fade-in effect to all elements with the class "fade-in"
+        const fadeElements = document.querySelectorAll(".fade-in");
+        fadeElements.forEach((el) => observer.observe(el));
+    });
+</script>
 
 </html>

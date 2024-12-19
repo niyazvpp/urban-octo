@@ -4,16 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ asset('assets/src/favicon.ico') }}" type="image/x-icon">
+
     @vite('resources/css/app.css')
     <title>Register | Ihya</title>
 </head>
+<style>
+    /* Smooth Scrolling Effect */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Fade-in Animation */
+    .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+
+    .fade-in-visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
 
 <body>
 
 
     <section>
-        <div class="flex relative place-content-center flex-col items-center mt-8 mb-6">
-            <img class="mr-[55%] h-18 hidden md:block" src="{{ asset('assets/src/IHYA logo png 1.png') }}" alt="IHYA Logo">
+        <div class="flex relative place-content-center flex-col items-center mt-8 mb-6 fade-in">
+            <img class="mr-[55%] h-18 hidden md:block" src="{{ asset('assets/src/IHYA logo png 1.png') }}"
+                alt="IHYA Logo">
 
             <h1 class="md:text-3xl text-2xl my-2 font-semibold text-center md:mb-5 mb-2">Start with creating an account
             </h1>
@@ -62,6 +83,26 @@
             <li>Terms and Conditions</li>
         </ul>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // IntersectionObserver Setup
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("fade-in-visible");
+                        }
+                    });
+                }, {
+                    threshold: 0.2
+                } // Trigger when 20% of the element is visible
+            );
+
+            // Add fade-in effect to all elements with the class "fade-in"
+            const fadeElements = document.querySelectorAll(".fade-in");
+            fadeElements.forEach((el) => observer.observe(el));
+        });
+    </script>
 
 </body>
 
