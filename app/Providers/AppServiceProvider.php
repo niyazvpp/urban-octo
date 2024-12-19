@@ -16,6 +16,7 @@ class AppServiceProvider extends ServiceProvider
     public function register(): void
     {
         //
+        \Illuminate\Support\Facades\URL::forceScheme('https');
     }
 
     /**
@@ -23,6 +24,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        \Illuminate\Support\Facades\URL::forceScheme('https');
+
         Filament::serving(function () {
             Filament::registerNavigationGroups([
                 NavigationGroup::make()

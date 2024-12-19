@@ -21,3 +21,9 @@ yarn-error.log
 /.nova
 /.vscode
 /.zed
+*.zip
+/public/phpmyadmind
+/ssl
+/ssl/*
+.ebextensions
+/.platform
